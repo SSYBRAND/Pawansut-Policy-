@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Subscription Policy - Pawansut Animals Foundation</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f4f4f9;
+        }
+
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        section {
+            padding: 20px;
+            text-align: center;
+            background: #fff;
+            margin: 20px auto;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            width: 80%;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        ul li {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        footer {
+            background: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .scroll-container {
+            display: flex;
+            flex-direction: column;
+            overflow-y: auto;
+            scroll-behavior: smooth;
+            margin: 20px auto;
+            width: 80%;
+            max-height: 600px;
+            align-items: center;
+        }
+
+        .scroll-container img {
+            max-width: 100%;
+            max-height: 100%;
+            margin: 10px 0;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        @keyframes slideIn {
+            from { opacity: 0; transform: translateY(30px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        section {
+            animation: slideIn 1s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Pawansut Animals Foundation policy</h1>
+    </header>
+
+    <section>
+        <h2>Subscription Policy</h2>
+        <p>By subscribing to Pawansut Animals Foundation, you agree to the following terms:</p>
+        <ul>
+            <li>Subscriptions are non-refundable.</li>
+            <li>Your subscription helps us provide food and medicine to animals in need.</li>
+            <li>You will receive regular updates on how your contribution is making a difference.</li>
+        </ul>
+    </section>
+
+    <section>
+        <h2>Terms and Conditions</h2>
+        <div class="scroll-container">
+            <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVoDVAwvi1Z8NUafrQtoclxHwLOoM8jB0JORr4FaQ94ayl8hf3xKWEa4S&s=10 " alt="License Image 1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVoDVAwvi1Z8NUafrQtoclxHwLOoM8jB0JORr4FaQ94ayl8hf3xKWEa4S&s=10" alt="License Image 2">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVoDVAwvi1Z8NUafrQtoclxHwLOoM8jB0JORr4FaQ94ayl8hf3xKWEa4S&s=10" alt="License Image 3">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVoDVAwvi1Z8NUafrQtoclxHwLOoM8jB0JORr4FaQ94ayl8hf3xKWEa4S&s=10" alt="License Image 4">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVoDVAwvi1Z8NUafrQtoclxHwLOoM8jB0JORr4FaQ94ayl8hf3xKWEa4S&s=10" alt="License Image 5">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTRVoDVAwvi1Z8NUafrQtoclxHwLOoM8jB0JORr4FaQ94ayl8hf3xKWEa4S&s=10" alt="License Image 6">
+        </div>
+    </section>
+<br></br>
+    <br></br>
+    <footer>
+        <p>&copy; 2024 Pawansut Animals Foundation. All rights reserved.</p>
+    </footer>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const scrollContainer = document.querySelector('.scroll-container');
+            let isScrolling = false;
+
+            function startScrolling() {
+                if (!isScrolling) {
+                    isScrolling = setInterval(() => {
+                        scrollContainer.scrollTop += 1;
+                        if (scrollContainer.scrollTop + scrollContainer.clientHeight >= scrollContainer.scrollHeight) {
+                            scrollContainer.scrollTop = 0;
+                        }
+                    }, 10);
+                }
+            }
+
+            function stopScrolling() {
+                if (isScrolling) {
+                    clearInterval(isScrolling);
+                    isScrolling = false;
+                }
+            }
+
+            scrollContainer.addEventListener('mouseenter', stopScrolling);
+            scrollContainer.addEventListener('mouseleave', startScrolling);
+
+            startScrolling();
+        });
+    </script>
+</body>
+</html>
